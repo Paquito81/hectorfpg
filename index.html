@@ -13,7 +13,7 @@
     </script>
     <script type="text/javascript">
         (function(){
-        emailjs.init("16_fH1SOUJvHOc-Ju");
+        emailjs.init("user_16_fH1SOUJvHOc-Ju");
         })();
     </script>
 
@@ -25,7 +25,7 @@
                 <img id="personal-logo" src="" alt="">
             </figure>
             <ul class="nav__link--list">
-                <li class="nav__link"> 
+                <li class="nav__link" onclick="toggleModal()"> 
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
@@ -33,7 +33,7 @@
                     ">About</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#" class="
+                    <a href="#projects" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
@@ -51,7 +51,7 @@
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
-                    "><i class="fas fa-adjust"></i></a>
+                    "><i class="fas fa-adjust" aria-hidden="true"></i></a>
                 </li>
             </ul>
         </nav>
@@ -65,13 +65,13 @@
                 </p>
                 <div class="social__list">
                     <a href="#" target="_blank" class="social__link click">
-                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                     </a>
                     <a href="#" class="social__link click">
-                        <i class="fab fa-github"></i>
+                        <i class="fab fa-github" aria-hidden="true"></i>
                     </a>
                     <a href="#" class="social__link click">
-                        <i class="fas fa-file-pdf"></i>
+                        <i class="fas fa-file-pdf" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -107,8 +107,8 @@
                        <span class="language__name">JavaScript</span>
                     </figure>
                    <figure class="modal__language">
-                       <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
-                       <span class="language__name">HTML</span>
+                       <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="">
+                       <span class="language__name">TypeScript</span>
                     </figure>
                    <figure class="modal__language">
                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
@@ -125,7 +125,7 @@
                </div>
            </div> 
            <div class="modal__half modal__contact">
-            <i class="fas fa-times modal__exit click " onclick="toggleModal()"></i> 
+            <i class="fas fa-times modal__exit click " onclick="toggleModal()" aria-hidden="true"></i> 
                <h3 class="modal__title modal__title--contact">
                    Let's have a chat!
                </h3>
@@ -135,11 +135,11 @@
                <form id="contact__form" onsubmit="contact(event)">
                     <div class="form__item">
                         <label class="form__item--label">Name</label>
-                        <input class="input" name="user__name" type="text"></input>
+                        <input class="input" name="user__name" type="text" required=""></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Email</label>
-                        <input class="input" name="user__email" type="email"></input>
+                        <input class="input" name="user__email" type="email" required=""></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Message</label>
@@ -150,7 +150,7 @@
                     </button>
                 </form>
                 <div class="modal__overlay modal__overlay--loading">
-                    <i class="fas fa-spinner"></i>
+                    <i class="fas fa-spinner" aria-hidden="true"></i>
                 </div>
                 <div class="modal__overlay modal__overlay--success">
                     Thanks for the message! Looking forward to speaking with you soon.
@@ -176,23 +176,23 @@
                 <ul class="project__list">
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="img/blinker mockup.png" class="project__img" alt="">
+                            <img src="img/Screen Shot 2022-05-18 at 3.44.30 AM.png" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
                             <div class="project__description">
                                 <h3 class="project__description--title">
-                                    Car Sales Projects
+                                    Now-Spinning_team-4
                                 </h3>
                                 <h4 class="project__description--sub-title">
-                                    HTML< CSS, JavaScript, Vue, 
+                                    HTML, Tailwind CSS, JavaScript, Spotify API, Youtube API 
                                 </h4>
                                 <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing 
-                                    elit. Nobis laudantium reprehenderit quidem expedita,
-                                    temporibus harum nostrum atque exercitationem eius 
-                                    dolor sit laboriosam ea vel sunt nesciunt aperiam ipsa, nulla minima?
+                                    Now Spinning is a webpage to bring you the newest releases, 
+                                    showcasing the artist name and song title along with their album artwork, 
+                                    plus a link to check out even more hits. We also have a little theme music going
+                                    in the background while you browse new music hits.
                                 </p>
                                 <div class="project__description--links">
-                                    <a href="#" class="project__description--link">
+                                    <a href="https://github.com/MichaelR432/now-spinning-team-4" class="project__description--link">
                                         <i class="fab fa-github"></i>
                                     </a>
                                     <a href="#" class="project__description--link">
@@ -278,14 +278,14 @@
                     <img class="footer__logo--img" src="" alt="">
                 </figure>
                 <div class="footer__social--list">
-                    <a href="#" class="
+                    <a href="https://github.com/Paquito81" class="
                     footer__social--link
                     link__hover-effect
                     link__hover-effect--white
                     ">
                     Github 
                     </a>
-                    <a href="#" class="
+                    <a href="#" target="_blank" class="
                     footer__social--link
                     link__hover-effect
                     link__hover-effect--white
@@ -293,12 +293,12 @@
                     Linkedin
 
                     </a>
-                    <a href="#" class="
+                    <a href="#" onclick="toggleModal()"  class="
                     footer__social--link
                     link__hover-effect
                     link__hover-effect--white
                     ">
-                    Email
+                    Contact
 
                     </a>
                     <a href="#" class="
@@ -310,7 +310,7 @@
 
                     </a>
                 </div>
-                <div class="footer__copyright">Copyright  2022 Hector Palacios</div>
+                <div class="footer__copyright">Copyright © 2022 Hector Palacios</div>
             </div>
         </div>
     </footer>
